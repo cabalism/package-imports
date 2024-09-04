@@ -1,0 +1,26 @@
+cabal-version:      3.4
+name:               package-imports
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            MPL-2.0
+license-file:       LICENSE
+author:             Phil de Joux
+maintainer:         philderbeast@gmail.com
+-- copyright:
+category:           Development
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  MyLib
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base
+    hs-source-dirs:   lib
+    default-language: GHC2024
